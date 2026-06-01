@@ -64,7 +64,7 @@ export default function WeddingApp() {
             </p>
 
            <img
-  src="Images/wedding.jpg"
+  src="Images/wed.jpg"
   className="rounded-3xl h-85 w-full object-cover mt-6 shadow-lg"
 />
 
