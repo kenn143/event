@@ -8,8 +8,8 @@ type MediaItem = {
 };
 
 export default function WeddingApp() {
-  const bride = "John";
-  const groom = "Mary";
+  const bride = "Gladys";
+  const groom = "Kenneth";
 
   const [tab, setTab] = useState<"home" | "upload" | "gallery" | "done">(
     "home"
@@ -56,7 +56,7 @@ export default function WeddingApp() {
             </div>
 
             <h1 className="text-4xl font-bold mt-5">
-              {bride} <span className="text-pink-400">&</span> {groom}
+              {groom} <span className="text-pink-400">&</span> {bride}
             </h1>
 
             <p className="text-sm text-gray-500 mt-2">
@@ -64,8 +64,8 @@ export default function WeddingApp() {
             </p>
 
            <img
-  src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc"
-  className="rounded-3xl h-72 w-full object-cover mt-6 shadow-lg"
+  src="Images/wedding.jpg"
+  className="rounded-3xl h-100 w-full object-cover mt-6 shadow-lg"
 />
 
             <button
