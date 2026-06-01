@@ -54,9 +54,9 @@ export default function WeddingApp() {
             <div className="text-xs tracking-widest text-pink-500 bg-pink-50 inline-block px-3 py-1 rounded-full">
               💍 WEDDING MEMORIES
             </div>
-
+{/* test */}
             <h1 className="text-4xl font-bold mt-5">
-              {groom} <span className="text-pink-400">&</span> {bride}
+              {groom} <span className="text-pink-400">&</span> {bride} 
             </h1>
 
             <p className="text-sm text-gray-500 mt-2">
@@ -65,7 +65,7 @@ export default function WeddingApp() {
 
            <img
   src="Images/wedding.jpg"
-  className="rounded-3xl h-100 w-full object-cover mt-6 shadow-lg"
+  className="rounded-3xl h-85 w-full object-cover mt-6 shadow-lg"
 />
 
             <button
