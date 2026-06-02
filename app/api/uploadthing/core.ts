@@ -1,18 +1,13 @@
-// src/app/api/uploadthing/core.ts
+// app/api/uploadthing/core.ts
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 
 const f = createUploadthing();
 
 export const ourFileRouter = {
-  // Route for wedding images
   weddingImageUploader: f({
-    image: {
-      maxFileSize: "16MB",
-      maxFileCount: 20,
-    },
+    image: { maxFileSize: "16MB", maxFileCount: 20 },
   })
     .middleware(async () => {
-      // You can add auth here later (e.g. check session)
       return { uploadedAt: new Date().toISOString() };
     })
     .onUploadComplete(async ({ metadata, file }) => {
@@ -20,12 +15,8 @@ export const ourFileRouter = {
       return { url: file.url, name: file.name, uploadedAt: metadata.uploadedAt };
     }),
 
-  // Route for wedding videos
   weddingVideoUploader: f({
-    video: {
-      maxFileSize: "256MB",
-      maxFileCount: 5,
-    },
+    video: { maxFileSize: "256MB", maxFileCount: 5 },
   })
     .middleware(async () => {
       return { uploadedAt: new Date().toISOString() };

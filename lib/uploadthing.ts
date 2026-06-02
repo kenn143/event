@@ -1,4 +1,4 @@
-// src/lib/uploadthing.ts
+// lib/uploadthing.ts
 import { generateUploadButton, generateUploadDropzone, generateReactHelpers } from "@uploadthing/react";
 import type { OurFileRouter } from "@/app/api/uploadthing/core";
 
